@@ -1,7 +1,7 @@
 
 var express = require("express")
 var app = express()
-var PORT = 8888 || process.env.PORT
+var PORT = process.env.PORT || 8888
 var http = require("http").createServer(app).listen(PORT)
 
 var Turn = require('node-turn');
